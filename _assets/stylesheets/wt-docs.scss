@@ -183,10 +183,6 @@ code {
     border: 0;
 }
 
-ul > li:not(:last-child) {
-    margin-bottom: .5rem;
-}
-
 .octicon {
     display: inline-block;
     vertical-align: text-top;
@@ -290,6 +286,20 @@ main {
     float: left;
     padding-right: 1em;
     margin-bottom: -1.25em;
+}
+
+.list-group-team {
+    margin-bottom: 1rem;
+    
+    .list-group-item {
+        padding: 0 0 0 1.5rem;
+        height: 60px;
+        max-height: 60px;
+
+        img {
+            max-height: 60px;
+        }
+    }
 }
 
 @include media-breakpoint-up(md) {
@@ -408,6 +418,10 @@ main {
     }
     
     #home-blurb {
+        width: 50%;
+    }
+
+    .list-group-team {
         width: 50%;
     }
 }
